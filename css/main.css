@@ -5,7 +5,7 @@
   width: 100vw;
   height: 100vh;
   background: #191919;
-  z-index: 1000 !important;
+  z-index: 10000 !important;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
