@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Page information -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Yeetcraft | Home</title>
+
+    <!-- Native Css project files -->
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/toggle-classes.css">
+    <link rel="stylesheet" href="css/main_media.css">
+    <link rel="stylesheet" href="css/updates.css">
+
+    <!-- Libraries -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">    
+
+</head>
+<body>
+
+    <div class="preloader">
+        <img src="assets/logo.png" alt="Logo-preloading" class="preloader-img rotate">
+    </div>
+
+    <!-- Main wrapper -->
+    <div id="wrapper">
+        
+        <div class="container">
+            <div id="header">
+                <div class="logo-wrapper">
+                    <img src="assets/logo.png" alt="Logo" class="logo">
+                    <a href="index.html" class="server-name">Yeetcraft</a>
+                 </div>
+        
+                 <nav class="header-nav">
+                    <ul>
+                        <li><a href="AboutUs.html">About us</a></li>
+                        <li><a href="https://yeeetcraft.craftingstore.net/">Store</a></li>
+                        <li><a href="updates.html">Updates</a></li>
+                        <li><a href="https://discord.gg/RY6kdMa">Discord</a></li>
+                    </ul>
+                </nav>
+
+                <div class="burger-menu">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="main-content">
+                <h1 class="mobile-title">Updates / changelog</h1>
+
+                <div class="articles">
+                    <div class="article">
+                        <span class="date">14/05/2020</span>
+                        <h2 class="article-title">Webiste is launched</h2>
+                        <p class="article-text">
+                            Since our server has been running for a few weeks already, we found a necessity
+                            in launching our own website for our communiy to navigate in our network way easier.
+                            So here it is! Feel free to contact us if you have any
+                            suggestions how to improve our network.
+                            (All social media is down below in page’s footer)
+                        </p>
+                        <img src="assets/pankaj-patel-Ylk5n_nd9dA-unsplash.jpg" alt="Img1" class="article-img">
+
+                    </div>
+
+                    <div class="article">
+                        <span class="date">14/05/2020</span>
+                        <h2 class="article-title">Webiste is launched</h2>
+                        <p class="article-text">
+                            Since our server has been running for a few weeks already, we found a necessity
+                            in launching our own website for our communiy to navigate in our network way easier.
+                            So here it is! Feel free to contact us if you have any
+                            suggestions how to improve our network.
+                            (All social media is down below in page’s footer)
+                        </p>
+                    </div>
+
+                    <div class="article">
+                        <span class="date">14/05/2020</span>
+                        <h2 class="article-title">Webiste is launched</h2>
+                        <p class="article-text">
+                            Since our server has been running for a few weeks already, we found a necessity
+                            in launching our own website for our communiy to navigate in our network way easier.
+                            So here it is! Feel free to contact us if you have any
+                            suggestions how to improve our network.
+                            (All social media is down below in page’s footer)
+                        </p>
+                    </div>
+                    <h1 class="title">Updates / changelog</h1>
+                    
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <footer>
+       <div class="container">
+        <div class="links-block">
+            <nav class="footer-nav">
+                <h2>Navigation</h2>
+                <ul>
+                    <li><a href="index.html">Homepage</a></li>
+                    <li><a href="AboutUs.html">About us</a></li>
+                    <li><a href="https://yeeetcraft.craftingstore.net/">Store</a></li>
+                    <li><a href="updates.html">Updates</a></li>
+                </ul>
+            </nav>
+    
+            <nav class="social-media">
+                <h2>Social media</h2>
+                <ul>
+                    <li><a href="https://twitter.com/IamTheRoland">Twitter</a></li>
+                    <li><a href="https://discord.gg/RY6kdMa">Discord</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <p class="copyright">
+            <img src="assets/logo.png" alt=Logo" class="logo"> <span class="rights">Copyright C Yeetcraft 2020. All rights reserved.</span>
+        </p>
+       </div>
+    </footer>
+
+    <div class="page-unloader"></div>
+    
+    <!-- Scripts -->
+    <script src="libs/jquery/dist/jquery.min.js"></script>
+    <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/index.js"></script>
+
+    <script>
+        bars.click(() => {
+
+            if(!$(".main-content").hasClass("adaptForMenu")) {
+                adaptForMenu(".main-content");
+                setTimeout(() => {
+                    bars.toggleClass("toggleBars");
+                    $("#header nav").toggleClass("slideOut");
+                }, 350)
+            } else {
+                bars.toggleClass("toggleBars");
+                $("#header nav").toggleClass("slideOut");
+                setTimeout(() => {
+                    adaptForMenu(".main-content");     
+                }, 350)
+            }
+
+        });
+
+        $(".article").attr("data-aos", "fade-up").attr("data-aos-duration", "1000");
+    </script>
+    
+</body>
+</html>

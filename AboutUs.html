@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Page information -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Yeetcraft | Home</title>
+
+    <!-- Native Css project files -->
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/toggle-classes.css">
+    <link rel="stylesheet" href="css/main_media.css">
+    <link rel="stylesheet" href="css/aboutUs.css">
+
+    <!-- Libraries -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="libs/slick/slick.css">
+    <link rel="stylesheet" href="libs/slick/slick-theme.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">    
+
+</head>
+<body>
+
+    <div class="preloader">
+        <img src="assets/logo.png" alt="Logo-preloading" class="preloader-img rotate">
+    </div>
+
+    <!-- Main wrapper -->
+    <div id="wrapper">
+        <div class="container">
+            <div id="header">
+                <div class="logo-wrapper">
+                    <img src="assets/logo.png" alt="Logo" class="logo">
+                    <a href="index.html" class="server-name">Yeetcraft</a>
+                 </div>
+        
+                 <nav class="header-nav">
+                    <ul>
+                        <li><a href="AboutUs.html">About us</a></li>
+                        <li><a href="https://yeeetcraft.craftingstore.net/">Store</a></li>
+                        <li><a href="updates.html">Updates</a></li>
+                        <li><a href="https://discord.gg/RY6kdMa">Discord</a></li>
+                    </ul>
+                </nav>
+
+                <div class="burger-menu">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="about-content">
+                <div class="about-info" data-aos="fade-up" data-aos-duration="1000">
+                    <h1 class="title">About us</h1>
+                    <p>Yeetcraft is a kit pvp server with a map to fight several players at the same time and one for duels only. The map itself also provides parkour elements and has a lot of spots to encouter pvp fights. PLayers are getting coins for kills that they can later spend in in-game auction house. (More details in lobby)</p>
+                    <p>In order to get to know latest updates and news on the server, go to <a href="updates.html">Updates</a> page.</p>
+                </div>
+
+                <div class="slider">
+                    <div class="slick-image" data-src="assets/slick1.png"></div>
+                    <div class="slick-image" data-src="assets/slick2.jpg"></div>
+                    <div class="slick-image" data-src="assets/slick3.jpg"></div>
+                </div>
+            </div>
+            
+        </div>
+
+       
+
+        
+    </div>
+
+    <footer>
+        <div class="container">
+         <div class="links-block">
+             <nav class="footer-nav">
+                 <h2>Navigation</h2>
+                 <ul>
+                     <li><a href="index.html">Homepage</a></li>
+                     <li><a href="AboutUs.html">About us</a></li>
+                     <li><a href="https://yeeetcraft.craftingstore.net/">Store</a></li>
+                     <li><a href="updates.html">Updates</a></li>
+                 </ul>
+             </nav>
+     
+             <nav class="social-media">
+                 <h2>Social media</h2>
+                 <ul>
+                     <li><a href="https://twitter.com/IamTheRoland">Twitter</a></li>
+                     <li><a href="https://discord.gg/RY6kdMa">Discord</a></li>
+                 </ul>
+             </nav>
+         </div>
+         
+         <p class="copyright">
+             <img src="assets/logo.png" alt=Logo" class="logo"> <span class="rights">Copyright C Yeetcraft 2020. All rights reserved.</span>
+         </p>
+        </div>
+     </footer>
+
+     <div class="page-unloader"></div>
+    
+    <!-- Scripts -->
+    <script src="libs/jquery/dist/jquery.min.js"></script>
+    <script src="libs/slick/slick.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/index.js"></script>
+
+    <script defer async>
+        
+
+        if($(window).width() > 1024) {
+            normalizeViewport(".about-content", "#header");
+        }
+
+        $(window).resize(() => {
+            if($(window).width() > 1024) {
+                normalizeViewport(".about-content", "#header");
+            } else {
+                $(".about-content").css("height", "100%");
+            }
+        })
+
+        bars.click(() => {
+            if(!$(".about-content").hasClass("adaptForMenu2")) {
+                adaptForMenu2(".about-content");
+                setTimeout(() => {
+                    bars.toggleClass("toggleBars");
+                    $("#header nav").toggleClass("slideOut");
+                }, 350)
+            } else {
+                bars.toggleClass("toggleBars");
+                $("#header nav").toggleClass("slideOut");
+                setTimeout(() => {
+                    adaptForMenu2(".about-content");     
+                }, 350)
+            }
+            
+        });
+
+        $('.slider').slick({
+            arrows: false,
+            autoplay: true,
+            autoplaySpeed: 4000,
+            draggable: false,
+            pauseOnFocus: false,
+            pauseOnHover: false
+        });
+
+    </script>
+    
+</body>
+</html>

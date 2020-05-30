@@ -1,0 +1,52 @@
+#bgvideo {
+  position: fixed;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1; }
+
+.server-name:hover {
+  color: #fafafa !important; }
+
+.header-nav a:hover {
+  color: #fafafa !important; }
+
+.container {
+  position: relative;
+  height: inherit !important; }
+
+.server-stats {
+  background: #191919;
+  display: inline-block;
+  padding: 2em 4em;
+  border-radius: 0.6em;
+  position: absolute;
+  right: 0;
+  margin-top: 10em; }
+  .server-stats ul {
+    padding: 0; }
+    .server-stats ul li {
+      color: #fafafa;
+      list-style-type: none;
+      font-size: 1.7rem;
+      margin-top: 0.5em; }
+      .server-stats ul li span {
+        margin-left: 1em;
+        color: #fafafa; }
+
+@media screen and (max-width: 600px) {
+  #wrappper {
+    position: relative; }
+  .server-stats-container {
+    position: absolute;
+    margin-left: 50% !important;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    bottom: 6em; }
+    .server-stats-container .server-stats {
+      margin-top: 0;
+      -webkit-transform: translateY(-100%);
+          -ms-transform: translateY(-100%);
+              transform: translateY(-100%);
+      left: 0; } }
