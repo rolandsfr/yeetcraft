@@ -66,6 +66,7 @@ body {
           letter-spacing: 0.1em;
           -webkit-transition: 0.2s linear;
           -o-transition: 0.2s linear;
+          z-index: 1000 !important;
           transition: 0.2s linear; }
           #header nav.header-nav ul li a:hover {
             color: #777; }
