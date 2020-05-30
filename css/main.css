@@ -53,6 +53,7 @@ body {
       #header .logo-wrapper .server-name:hover {
         color: #555; }
   #header nav.header-nav {
+    z-index: 1000 !important;
     margin-top: 1em; }
     #header nav.header-nav ul {
       font-size: 0; }
