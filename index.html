@@ -129,7 +129,7 @@
                 $(".players-online").html(status.players["now"]);
             } else {
                 $(".server-status").html("Offline").removeClass("status-online").addClass("status-offline");
-                $(".players
+                $(".players-online").html("NaN");
             
       });
                  
@@ -143,7 +143,7 @@
                     $(".players-online").html(status.players["now"]);
                 } else {
                     $(".server-status").html("Offline").removeClass("status-online").addClass("status-offline");
-                    $(".players
+                    $(".players-online").html("NaN");
             
             });
       }, refreshTime);
