@@ -65,7 +65,7 @@
                 <ul>
                     <li>IP: <span class="server-ip">yeetcraft.my.pebble.host</span></li>
                     <li>Status: <span class="server-status status-online">Online</span></li>
-                    <li>Players online: <span class="players-online">6</span></li>
+                    <li>Players online: <span class="players-online">0</span></li>
                 </ul>
             </div>
         </div>
@@ -120,7 +120,7 @@
 
         let refreshTime = 20000;
 
-        MinecraftAPI.getServerStatus('https://mcapi.us/server/status?ip=yeetcraft.my.pebble.host', {}, function (err, status) {
+        MinecraftAPI.getServerStatus('mc.hypixel.net', {}, function (err, status) {
 
             // you can change these to your own message!
 
