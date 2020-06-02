@@ -129,20 +129,24 @@
                 $(".players-online").html(status.players["now"]);
             } else {
                 $(".server-status").html("Offline").removeClass("status-online").addClass("status-offline");
-                $(".players-online").html("NaN");
-            }
+                $(".players
+            
+      });
+                 
+      setInterval(() => {
+            MinecraftAPI.getServerStatus('mc.hypixel.net', {}, function (err, status) {
 
-            setInterval(() => {
+                // you can change these to your own message!
+
                 if(status.online) {
                     $(".server-status").html("Online").removeClass("status-offline").addClass("status-online");
                     $(".players-online").html(status.players["now"]);
                 } else {
                     $(".server-status").html("Offline").removeClass("status-online").addClass("status-offline");
-                    $(".players-online").html("0");
-                }
-            }, refreshTime);
+                    $(".players
             
-      });
+            });
+      }, refreshTime);
     </script>
     
 </body>
