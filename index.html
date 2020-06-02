@@ -120,7 +120,7 @@
 
         let refreshTime = 20000;
 
-        MinecraftAPI.getServerStatus('yeetcraft.my.pebble.host', {}, function (err, status) {
+        MinecraftAPI.getServerStatus('https://mcapi.us/server/status?ip=yeetcraft.my.pebble.host', {}, function (err, status) {
 
             // you can change these to your own message!
 
@@ -129,7 +129,7 @@
                 $(".players-online").html(status.players["now"]);
             } else {
                 $(".server-status").html("Offline").removeClass("status-online").addClass("status-offline");
-                $(".players-online").html("0");
+                $(".players-online").html("NaN");
             }
 
             setInterval(() => {
