@@ -2,6 +2,10 @@
   margin: 0;
   padding: 0; }
 
+#wrapper {
+  height: auto !important;
+  overflow: visible !important; }
+
 .main-content {
   padding-bottom: 9em;
   width: 100%;
@@ -12,32 +16,48 @@
     letter-spacing: 0.1em;
     font-size: 2.1rem;
     margin-bottom: 2em;
-    display: none; }
+    display: none;
+    margin-top: -2em; }
   .main-content .title {
     white-space: nowrap;
-    position: -webkit-sticky;
-    position: sticky;
+    position: absolute;
+    top: 6em;
     -webkit-transform-origin: bottom;
         -ms-transform-origin: bottom;
             transform-origin: bottom;
     -webkit-transform: rotate(270deg);
         -ms-transform: rotate(270deg);
             transform: rotate(270deg);
-    bottom: 4em;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.1em;
     font-size: 2.1rem;
-    margin-left: 130%;
-    margin-top: -1em; }
+    right: 0; }
   .main-content .articles {
     width: 75%;
     height: auto !important;
     position: relative; }
     .main-content .articles .article {
       background: #fafafa;
-      padding: 3em;
-      margin-bottom: 5em; }
+      padding: 4em;
+      margin-bottom: 5em;
+      -webkit-box-shadow: 7px 7px 20px #ddd;
+              box-shadow: 7px 7px 20px #ddd; }
+      .main-content .articles .article a {
+        color: blue; }
+      .main-content .articles .article .changelog {
+        font-size: 2.2rem;
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 0.1em;
+        margin-top: 1em; }
+      .main-content .articles .article ul {
+        margin-left: 3em;
+        margin-top: 1em;
+        font-size: 1.5rem;
+        margin-bottom: 1em; }
+        .main-content .articles .article ul li {
+          margin-top: 0.5em; }
       .main-content .articles .article:last-of-type {
         margin-bottom: 0; }
       .main-content .articles .article .date {
@@ -53,7 +73,7 @@
       .main-content .articles .article .article-text {
         font-size: 1.6rem;
         width: 43em;
-        margin-top: 1.7em;
+        margin-top: 1em;
         line-height: 1.8em; }
       .main-content .articles .article .article-img {
         width: 100%;

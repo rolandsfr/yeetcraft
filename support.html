@@ -7,33 +7,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Yeetcraft | About Us</title>
+    <title>Yeetcraft | Support</title>
 
     <!-- Native Css project files -->
     <link rel="stylesheet" href="css/default.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/toggle-classes.css">
     <link rel="stylesheet" href="css/main_media.css">
-    <link rel="stylesheet" href="css/aboutUs.css">
+    <link rel="stylesheet" href="css/support.css">
 
     <!-- Libraries -->
-    <link rel="stylesheet" href="libs/slick/slick.css">
-    <link rel="stylesheet" href="libs/slick/slick-theme.css">
-
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
-
     <link
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css"
       />
 
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/all.css"> 
+
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
-    
-    <script type="text/javascript">
-       (function(){
-          emailjs.init("user_z3F7jyQ8qvbeOobnstw7p");
-       })();
-    </script>
 
 </head>
 <body>
@@ -69,32 +63,64 @@
                 </div>
              </div>   
         </header>
-        
+
         <div class="header-static"></div>
 
         <main>
-
-            <div class="container">
-
-                <div class="about-content">
-                    <div class="about-info" data-wow-delay="">
-                        <h1 class="title wow fadeInUp">About us</h1>
-                        <p class="wow fadeInUp" data-wow-delay="0.2s">Yeetcraft is a minecraft kit pvp server with many different kits. There is a ranking system on the server which means you can get more and more powerful kits depending on how much you play. We have maps such as arena to fight many people at once and duels maps in case you want to fight someone in 1v1.</p>
-                        <p class="wow fadeInUp" data-wow-delay="0.2s">In order to get to know latest updates and news on the server, go to <a href="updates.html">Updates</a> page.</p>
-                    </div>
-
-                    <div class="slider">
-                        <div class="slick-image" data-src="assets/slick1.png"></div>
-                        <div class="slick-image" data-src="assets/slick2.jpg"></div>
-                        <div class="slick-image" data-src="assets/slick3.jpg"></div>
-                    </div>
+          <div class="container">
+            <div class="main-content">
+             <div class="support-info">
+                <h1 class="title wow fadeInUp">Support</h1>
+                <div class="support-options wow fadeInUp" data-wow-delay="0.2s">
+                  <p class="email">yeetcraftmc@gmail.com</p>
+                  <p>Join our <a href="https://discord.gg/vMvucJG">Discord server</a> to contact our staff members.</p>
+                  <p>Before sending us an email, check if someone has already asked a similar question in our <a href="upcoming.html">FAQ (coming soon)</a> page.</p>
+                  <p>... If not - feel free to email our support team!</p>
                 </div>
-                
+             </div>
+             <div class="form wow">
+               <form action="">
+                 <h2>Contact form</h2>
+
+                  <label for="email">Email address</label>
+                  <input type="text" id="email-full-form">
+
+                  <div class="sidebyside">
+                    <div class="field">
+                      <label for="name">Your name</label>
+                      <input type="text" id="name">
+                    </div>
+                    <div class="field">
+                      <label for="ign">Your IGN</label>
+                      <input type="text" id="ign">
+                    </div>
+                  </div>
+
+                  <label for="">Choose topic</label>
+                  <div class="topics">
+                    <span class="current-topic">Ban or unban</span>
+                    <ul class="dropdown">
+                      <li>Ban or unban</li>
+                      <li>Staff applications</li>
+                      <li>Patnership</li>
+                      <li>Report bugs</li>
+                      <li>Other</li>
+                    </ul>
+                  </div>
+
+                  <label for="msg">Your message / question</label>
+                  <textarea name="" id="msg-full-form" cols="30" rows="10"></textarea>
+
+                  <input class="send-btn" type="submit" value="Send">
+                  <p class="full-form-error"></p>
+               </form>
+             </div>
             </div>
+          </div>
         </main>
     </div>
 
-   <footer>
+    <footer>
        <div class="container">
         <div class="links-block">
            <div class="links">
@@ -151,26 +177,77 @@
        </div>
     </footer>
 
-     <div class="page-unloader"></div>
-    
+    <div class="page-unloader"></div>
+
     <!-- Scripts -->
     <script src="libs/jquery/dist/jquery.min.js"></script>
-    <script src="libs/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/leonardosnt/mc-player-counter/dist/mc-player-counter.min.js"></script>
+    <script src="https://mcapi.us/scripts/minecraft.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/common.js"></script>
     <script src="js/index.js"></script>
 
-    <script defer async>
+    <script>
+      $(".current-topic").click(() => {
+        $(".topics ul").slideToggle("fast");
+      })
 
-        $('.slider').slick({
-            arrows: false,
-            autoplay: true,
-            autoplaySpeed: 4000,
-            draggable: false,
-            pauseOnFocus: false,
-            pauseOnHover: false
+      $(".topics li").click((e) => {
+        $(".current-topic").html($(e.target).html())
+
+        $(".topics ul").slideToggle("fast", () => {
+          $(".topics li").show();
+          $(e.target).hide()
         });
+      });
 
+      $(".form form").submit((e) => {
+        e.preventDefault();
+        $(".full-form-error").removeClass("success");
+
+        $(".form input[type=text], textarea").css("border", "none")
+
+        let fieldsCompleted = false;
+
+        if($(".form textarea").val() === ""){
+          $(".full-form-error").html("Please enter your message.")
+          $("textarea").css("border", "1px solid #DC000F");
+
+          fieldsCompleted = false;
+        } else {
+          fieldsCompleted = true;
+
+          for(let i = 0; i < $(".form input").length; i++) {
+
+            if($(".form input").eq(i).val() === "") {
+              $(".full-form-error").html("Please fill in all the fields.")
+              $(".form input").eq(i).css("border", "1px solid #DC000F");
+
+              fieldsCompleted = false;
+            }
+          }
+        }
+
+        if(fieldsCompleted) {
+          $(".full-form-error").html("");
+
+          let templateParams = {
+            name: $("#name").val(),
+            ign: $("#ign").val(),
+            email: $("#email-full-form").val(),
+            topic: $(".current-topic").html(),
+            message: $("#msg-full-form").val()
+          }
+
+          emailjs.send('gmail', 'msg', templateParams)
+            .then(function(response) {
+                $(".full-form-error").html("Your message was successfully sent!").addClass("success");
+            }, function(error) {
+               $(".full-form-error").html("Something went wrong... Refresh page and try again.");
+            });
+        }     
+
+      })
     </script>
     
 </body>

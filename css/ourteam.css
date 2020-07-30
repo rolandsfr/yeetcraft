@@ -1,0 +1,72 @@
+* {
+  word-wrap: break-word; }
+
+.title {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 2.9rem;
+  letter-spacing: 0.1em;
+  margin-bottom: 1em;
+  margin-top: 3em; }
+
+.team-container {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
+  grid-gap: 3em;
+  margin-bottom: 12em; }
+  .team-container .person {
+    background: #e7e7e7;
+    padding: 4em 4em;
+    padding-bottom: 8em;
+    border-radius: 5px;
+    position: relative; }
+    .team-container .person .ign {
+      text-transform: uppercase;
+      font-weight: bold;
+      letter-spacing: 0.4em;
+      margin-bottom: 0.7em;
+      font-size: 2.3rem; }
+    .team-container .person .info-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      line-height: 1.6em; }
+    .team-container .person .discord {
+      text-transform: none !important; }
+    .team-container .person .descr-title {
+      margin-top: 1em; }
+    .team-container .person .description {
+      font-size: 1.4rem;
+      margin-top: 0.4em;
+      font-size: 1.7rem;
+      padding-bottom: 1em; }
+    .team-container .person .skin {
+      position: absolute;
+      bottom: 2.5em; }
+
+.owner {
+  color: #740202; }
+
+.developer {
+  color: #0026ff; }
+
+.admin {
+  color: #ff0000; }
+
+.helper {
+  color: #f3b200; }
+
+.builder {
+  color: #00ac0e; }
+
+.mod {
+  color: #7a0dd3; }
+
+@media screen and (max-width: 1200px) {
+  .team-container {
+    grid-template-columns: 2fr 2fr; } }
+
+@media screen and (max-width: 786px) {
+  .team-container {
+    grid-template-columns: 1fr; } }

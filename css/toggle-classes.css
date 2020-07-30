@@ -15,22 +15,22 @@
     -o-transition: 0.5s;
     transition: 0.5s; }
     .toggleBars div:first-of-type {
-      -webkit-transform: rotate(45deg) translate(13px, 0);
-          -ms-transform: rotate(45deg) translate(13px, 0);
-              transform: rotate(45deg) translate(13px, 0);
+      -webkit-transform: rotate(45deg) translate(11.5px, 0);
+          -ms-transform: rotate(45deg) translate(11.5px, 0);
+              transform: rotate(45deg) translate(11.5px, 0);
       -webkit-transition: 0.5s;
       -o-transition: 0.5s;
       transition: 0.5s; }
     .toggleBars div:last-of-type {
-      -webkit-transform: rotate(-45deg) translate(13px, 0);
-          -ms-transform: rotate(-45deg) translate(13px, 0);
-              transform: rotate(-45deg) translate(13px, 0);
+      -webkit-transform: rotate(-45deg) translate(11.5px, 0);
+          -ms-transform: rotate(-45deg) translate(11.5px, 0);
+              transform: rotate(-45deg) translate(11.5px, 0);
       -webkit-transition: 0.5s;
       -o-transition: 0.5s;
       transition: 0.5s; }
 
-.slideOut {
-  margin-left: 8.5em !important; }
+.slideIn {
+  margin-right: 0; }
 
 .adaptForMenu {
   -webkit-transform: translateY(15em);
@@ -66,5 +66,5 @@
   transition: 1.5s;
   opacity: 0; }
 
-.fadeIn {
+.fadeIn-custom {
   opacity: 1; }

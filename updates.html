@@ -17,11 +17,16 @@
     <link rel="stylesheet" href="css/updates.css">
 
     <!-- Libraries -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css"
+      />
 
     <!-- Fonts -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">   
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script> 
 
 </head>
 <body>
@@ -31,11 +36,11 @@
     </div>
 
     <!-- Main wrapper -->
+
     <div id="wrapper">
-        
-        <div class="container">
-            <div id="header">
-                <div class="logo-wrapper">
+        <header>
+             <div class="container">
+                 <div class="logo-wrapper">
                     <img src="assets/logo.png" alt="Logo" class="logo">
                     <a href="index.html" class="server-name">Yeetcraft</a>
                  </div>
@@ -43,9 +48,11 @@
                  <nav class="header-nav">
                     <ul>
                         <li><a href="AboutUs.html">About us</a></li>
-                        <li><a href="https://yeetcraftmc.craftingstore.net/">Store</a></li>
+                        <li><a href="https://yeeetcraftmc.craftingstore.net/">Store</a></li>
                         <li><a href="updates.html">Updates</a></li>
-                        <li><a href="https://discord.gg/RY6kdMa">Discord</a></li>
+                        <li><a href="ourteam.html">Our team</a></li>
+                        <li><a href="support.html">Support</a></li>
+                        <li><a href="https://discord.gg/vMvucJG">Discord</a></li>
                     </ul>
                 </nav>
 
@@ -54,83 +61,108 @@
                     <div></div>
                     <div></div>
                 </div>
-            </div>
-        </div>
+             </div>   
+        </header>
+        
+        <div class="header-static"></div>
 
-        <div class="container">
-            <div class="main-content">
-                <h1 class="mobile-title">Updates / changelog</h1>
+        <main>
+            <div class="container">
+                <div class="main-content">
+                    <h1 class="mobile-title">Updates / changelog</h1>
 
-                <div class="articles">
-                    <div class="article">
-                        <span class="date">14/05/2020</span>
-                        <h2 class="article-title">Webiste is launched</h2>
-                        <p class="article-text">
-                            Since our server has been running for a few weeks already, we found a necessity
-                            in launching our own website for our communiy to navigate in our network way easier.
-                            So here it is! Feel free to contact us if you have any
-                            suggestions how to improve our network.
-                            (All social media is down below in page’s footer)
-                        </p>
-                        <img src="assets/pankaj-patel-Ylk5n_nd9dA-unsplash.jpg" alt="Img1" class="article-img">
+                    <div class="articles">
+                        <div class="article wow fadeInUp">
+                            <span class="date">30/07/2020</span>
+                            <h2 class="article-title">Webiste revamp</h2>
+                            <p class="article-text">
+                                Website design has been revamped and the website itself updated.
+                                
+                                  <p class="changelog">Changelog</p>
+                                  <ul>
+                                    <li>All pages have been redesigned</li>
+                                    <li>Added <a href="ourteam.html">Our Team</a> page</li>
+                                    <li>Addedd <a href="support.html">Support</a> page</li>
+                                  </ul>
+                            </p>
+                            <img src="assets/website-revamp-banner.png" alt="Img1" class="article-img">
 
+                        </div>
+
+                        <div class="article wow fadeInUp">
+                            <span class="date">14/06/2020</span>
+                            <h2 class="article-title">First commit</h2>
+                            <p class="article-text">
+                                Since our server has been running for a few weeks already, we found a necessity
+                                in launching own website for our communiy to navigate in our network way easier.
+                                So here it is! Feel free to contact us if you have any
+                                suggestions how to improve our network.
+                                (All social media is down below in footer) <br>
+                                // Luanched on the 30th of May
+                            </p>
+                        </div>
+                        
                     </div>
 
-                    <div class="article">
-                        <span class="date">14/05/2020</span>
-                        <h2 class="article-title">Webiste is launched</h2>
-                        <p class="article-text">
-                            Since our server has been running for a few weeks already, we found a necessity
-                            in launching our own website for our communiy to navigate in our network way easier.
-                            So here it is! Feel free to contact us if you have any
-                            suggestions how to improve our network.
-                            (All social media is down below in page’s footer)
-                        </p>
-                    </div>
-
-                    <div class="article">
-                        <span class="date">14/05/2020</span>
-                        <h2 class="article-title">Webiste is launched</h2>
-                        <p class="article-text">
-                            Since our server has been running for a few weeks already, we found a necessity
-                            in launching our own website for our communiy to navigate in our network way easier.
-                            So here it is! Feel free to contact us if you have any
-                            suggestions how to improve our network.
-                            (All social media is down below in page’s footer)
-                        </p>
-                    </div>
                     <h1 class="title">Updates / changelog</h1>
-                    
-                </div>
-
             </div>
         </div>
+        </main>
     </div>
 
     <footer>
        <div class="container">
         <div class="links-block">
-            <nav class="footer-nav">
-                <h2>Navigation</h2>
-                <ul>
-                    <li><a href="index.html">Homepage</a></li>
-                    <li><a href="AboutUs.html">About us</a></li>
-                    <li><a href="https://yeetcraftmc.craftingstore.net/">Store</a></li>
-                    <li><a href="updates.html">Updates</a></li>
-                </ul>
-            </nav>
-    
-            <nav class="social-media">
-                <h2>Social media</h2>
-                <ul>
-                    <li><a href="https://twitter.com/IamTheRoland">Twitter</a></li>
-                    <li><a href="https://discord.gg/RY6kdMa">Discord</a></li>
-                </ul>
-            </nav>
+           <div class="links">
+                <nav class="footer-nav wow fadeInUp">
+                   <h2>Navigation</h2>
+                   <ul>
+                       <li><a href="index.html">Homepage</a></li>
+                       <li><a href="AboutUs.html">About us</a></li>
+                       <li><a href="https://yeeetcraftmc.craftingstore.net/">Store</a></li>
+                       <li><a href="ourteam.html">Our team</a></li>
+                       <li><a href="updates.html">Updates</a></li>
+                       <li><a href="support.html">Suport</a></li>
+                   </ul>
+               </nav>
+                   
+               <nav class="social-media wow fadeInUp wow fadeInUp">
+                   <h2>Social media</h2>
+                   <ul>
+                       <li><a href="https://twitter.com/IamTheRoland">Twitter</a></li>
+                       <li><a href="https://discord.gg/vMvucJG">Discord</a></li>
+                   </ul>
+               </nav>
+               
+               <nav class="uesfulLinks wow fadeInUp">
+                   <h2>Useful links</h2>
+                   <ul>
+                       <li><a href="upcoming.html">FAQ</a></li>
+                       <li><a href="upcoming.html">Privacy policy</a></li>
+                       <li><a href="upcoming.html">Terms of Service</a></li>
+                   </ul>
+               </nav>
+           </div>
+
+            <form action="" class="wow fadeInUp">
+                <h2>Contact form</h2>
+
+                <label for="email">Email address</label>
+                <input type="text" id="email">
+
+                <label for="name">Your name</label>
+                <input type="text" id="name">
+
+                <label for="msg">Your message / question</label>
+                <textarea name="" id="msg" cols="30" rows="10"></textarea>
+
+                <input type="submit" value="Send">
+                <p class="form-error"></p>
+            </form>
         </div>
         
-        <p class="copyright">
-            <img src="assets/logo.png" alt=Logo" class="logo"> <span class="rights">Copyright C Yeetcraft 2020. All rights reserved.</span>
+        <p class="copyright wow fadeInUp">
+          <span class="rights">Copyright &copy; Yeetcraft 2020. All rights reserved.</span>
         </p>
        </div>
     </footer>
@@ -139,31 +171,9 @@
     
     <!-- Scripts -->
     <script src="libs/jquery/dist/jquery.min.js"></script>
-    <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/common.js"></script>
     <script src="js/index.js"></script>
-
-    <script>
-        bars.click(() => {
-
-            if(!$(".main-content").hasClass("adaptForMenu")) {
-                adaptForMenu(".main-content");
-                setTimeout(() => {
-                    bars.toggleClass("toggleBars");
-                    $("#header nav").toggleClass("slideOut");
-                }, 350)
-            } else {
-                bars.toggleClass("toggleBars");
-                $("#header nav").toggleClass("slideOut");
-                setTimeout(() => {
-                    adaptForMenu(".main-content");     
-                }, 350)
-            }
-
-        });
-
-        $(".article").attr("data-aos", "fade-up").attr("data-aos-duration", "1000");
-    </script>
     
 </body>
 </html>

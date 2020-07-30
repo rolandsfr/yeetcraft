@@ -1,5 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,400&display=swap");
+* {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: #000;
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 10px; }
+
+#wrapper {
+  height: auto !important; }
+
 #bgvideo {
-  position: fixed;
+  position: absolute;
   bottom: 0;
   min-width: 100%;
   min-height: 100%;
@@ -12,41 +26,131 @@
   color: #fafafa !important; }
 
 .container {
+  position: relative; }
+
+#wrapper main {
+  width: 100%;
   position: relative;
-  height: inherit !important; }
+  overflow: hidden;
+  background-image: url("../assets/minecraft-shaders-seus.jpg");
+  background-size: cover; }
+  #wrapper main .overlay {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 5em 0;
+    padding-bottom: 16em; }
+    #wrapper main .overlay .titles > * {
+      color: #fff;
+      text-transform: uppercase;
+      font-weight: bold;
+      letter-spacing: 0.1em; }
+    #wrapper main .overlay h1 {
+      font-size: 7rem; }
+    #wrapper main .overlay h2 {
+      font-size: 4rem;
+      margin-top: 0em; }
+
+.server-stats-container {
+  margin-top: -11em; }
+  .server-stats-container h3 {
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-size: 1.9rem;
+    margin-bottom: 0.7em; }
 
 .server-stats {
-  background: #191919;
+  width: 100%;
+  background: #1C1C1C;
   display: inline-block;
-  padding: 2em 4em;
+  padding: 4em;
   border-radius: 0.6em;
-  position: absolute;
-  right: 0;
-  margin-top: 10em; }
+  -webkit-box-shadow: 7px 7px 20px #000;
+          box-shadow: 7px 7px 20px #000; }
   .server-stats ul {
     padding: 0; }
     .server-stats ul li {
       color: #fafafa;
       list-style-type: none;
-      font-size: 1.7rem;
-      margin-top: 0.5em; }
+      font-size: 1.8rem;
+      margin-top: 1em;
+      font-weight: bold;
+      letter-spacing: 0.1em;
+      text-transform: uppercase; }
+      .server-stats ul li:first-of-type {
+        margin-top: 0; }
       .server-stats ul li span {
         margin-left: 1em;
-        color: #fafafa; }
+        color: #fafafa;
+        font-weight: 400;
+        letter-spacing: 0;
+        text-transform: none; }
 
-@media screen and (max-width: 600px) {
-  #wrappper {
-    position: relative; }
+.cta-container {
+  position: absolute;
+  bottom: 5em;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto; }
+
+.cta {
+  background: #000;
+  padding: 0.8em 2.5em;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  margin-top: 4em;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  display: inline-block;
+  margin-top: 10em;
+  border-radius: 4px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s; }
+
+@media only screen and (max-width: 812px) and (max-height: 414px) {
+  main {
+    height: 170vh !important; }
+  .overlay {
+    padding-top: 8em !important; } }
+
+@media only screen and (max-width: 320px) and (max-height: 568px) {
+  main {
+    height: 120vh !important; }
+  .titles h1 {
+    font-size: 6rem !important; }
+  html {
+    font-size: 9px; }
+  .server-stats {
+    padding: 2.5em; }
+    .server-stats span {
+      font-size: 1.6rem; } }
+
+@media only screen and (max-width: 320px) {
+  .overlay {
+    padding-top: 8em !important; } }
+
+@media only screen and (min-width: 540px) {
+  .server-stats {
+    width: auto !important; } }
+
+@media only screen and (min-width: 1024px) {
+  .server-stats {
+    width: auto !important;
+    padding: 4em;
+    padding-right: 10em; }
   .server-stats-container {
     position: absolute;
-    margin-left: 50% !important;
-    -webkit-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
-            transform: translateX(-50%);
-    bottom: 6em; }
-    .server-stats-container .server-stats {
-      margin-top: 0;
-      -webkit-transform: translateY(-100%);
-          -ms-transform: translateY(-100%);
-              transform: translateY(-100%);
-      left: 0; } }
+    top: 0;
+    right: 0; }
+  .cta-container {
+    position: static; }
+  .cta {
+    margin-top: 2.5em; }
+  .titles h1 {
+    font-size: 12rem !important; }
+  .overlay {
+    padding-bottom: 8em !important; } }
