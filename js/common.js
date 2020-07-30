@@ -3,7 +3,7 @@ $("[data-src]").each(function(index, el) {
 });
 
 function normalizeViewport(el, outsider) {
-    $(el).height($(window).height() - $(outsider).outerHeight());
+    $(el).css("min-height", $(window).height() - $(outsider).outerHeight() + "px");
 }
 
 function adaptForMenu(mainEl) {
