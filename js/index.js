@@ -1,8 +1,11 @@
 $(".preloader-img").addClass("fadeIn-custom");
 
+let bars = $(".burger-menu");
+
 bars.click(() => {
     bars.toggleClass("toggleBars");
     $("#header nav").toggleClass("slideOut");
+    $("header nav").toggleClass("slideIn")
 });
 
 $(window).on("load", () => {
@@ -24,13 +27,6 @@ $(window).on("load", () => {
 
 
 });
-
-
-let bars = $(".burger-menu");
-
-bars.click(() => {
-    $("header nav").toggleClass("slideIn")
-})
 
 // $("#wrapper").css("min-height", ($(window).height() + "px"));
 
