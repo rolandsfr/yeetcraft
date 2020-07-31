@@ -1,5 +1,10 @@
 $(".preloader-img").addClass("fadeIn-custom");
 
+bars.click(() => {
+    bars.toggleClass("toggleBars");
+    $("#header nav").toggleClass("slideOut");
+});
+
 $(window).on("load", () => {
     setTimeout(() => {
         $(".preloader").animate({opacity: 0}, 500, () => {
