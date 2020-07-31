@@ -176,10 +176,12 @@
             refreshRate: 100 * 60 // default 1m
         });
 
+        let bars = $(".burger-menu");
+
         bars.click(() => {
             bars.toggleClass("toggleBars");
             $("#header nav").toggleClass("slideOut");
-            
+            $("header nav").toggleClass("slideIn")
         });
 
         let refreshTime = 100 * 60 * 5;
