@@ -111,7 +111,9 @@ html {
     -webkit-box-align: center !important;
     -webkit-align-items: center !important;
         -ms-flex-align: center !important;
-            align-items: center !important; } }
+            align-items: center !important; }
+    main .server-stats .server-ip span {
+      margin-left: 0 !important; } }
 
 @media only screen and (max-width: 812px) and (max-height: 414px) {
   .overlay {
