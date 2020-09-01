@@ -82,3 +82,25 @@
     width: 85% !important; }
   html {
     font-size: 8.5px; } }
+
+@media only screen and (max-width: 425px) {
+  html {
+    font-size: 7px !important; }
+  .links {
+    grid-gap: 0.7em !important; }
+  footer form {
+    margin-top: 1em; }
+    footer form input[type='submit'] {
+      font-size: 1.6rem;
+      border-width: 2px; } }
+
+@media only screen and (max-width: 812px) and (max-height: 375px) {
+  html {
+    font-size: 7px !important; }
+  .links {
+    grid-gap: 4em !important; }
+  footer form {
+    margin-top: 1em; }
+    footer form input[type='submit'] {
+      font-size: 1.6rem;
+      border-width: 2px; } }
